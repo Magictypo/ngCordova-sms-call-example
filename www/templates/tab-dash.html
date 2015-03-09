@@ -1,0 +1,12 @@
+<ion-view view-title="Call">
+  <ion-content class="padding">
+      <ion-list>
+          <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" ng-href="{{'tel:'+numberSetting}}" ng-click="panggil()">
+              <img ng-src="{{chat.face}}">
+              <h2>{{chat.name}}</h2>
+              <p>{{chat.lastText}}</p>
+                <i class="icon ion-ios7-telephone"></i>
+          </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>
